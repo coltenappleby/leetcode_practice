@@ -1,5 +1,9 @@
 var reverse = function(x) {
-    return parseInt(x.toString().split('').reverse().join(''))
+    let multi = 1
+    if (x < 0){
+        multi = -1
+    }
+    return multi * parseInt(x.toString().split('').reverse().join(''))
 };
 
 reverse(123)
