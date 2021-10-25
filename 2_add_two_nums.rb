@@ -63,24 +63,33 @@ def add_two_numbers(l1, l2)
     node = ListNode.new()
     result = node
     carry = 0
+    puts node
+
+
     while(l1 != nil || l2 != nil)
         l1.val != nil ? x = l1.val : x = 0
-        l2.val != nil ? x = l2.val : x = 0
+        l2.val != nil ? y = l2.val : y = 0
 
-        sum = l1.val + l2.val + carry
+        
+        sum = x + y + carry
+        # puts sum
+
         if(sum >= 10)
             carry = 1
             sum = sum-10
+        else
+            carry = 0
         end
         
         node.val = sum
         node.next = ListNode.new()
-        
+
+
         l1 != nil ? l1 = l1.next : l1 = nil
         l2 != nil ? l2 = l2.next : l2 = nil
-        carry = 0
     end
-    return node.next.next.val
+    puts node
+    return result
     
 end
 
