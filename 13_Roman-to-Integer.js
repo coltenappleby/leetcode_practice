@@ -32,3 +32,17 @@ var romanToInt = function(s) {
     return sum
     
 };
+
+
+// --- Tests ---
+
+s = "LVIII"
+s = "MCMXCIV"
+s= "XIX"
+
+console.log(romanToInt(s))
+
+
+//  --- Results ---
+// Runtime: 148 ms, faster than 76.75% of JavaScript online submissions for Roman to Integer.
+// Memory Usage: 45.1 MB, less than 53.68% of JavaScript online submissions for Roman to Integer.
